@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Divs and Forms</title>
+</head>
+<body>
+	<div id = "divisor">
+  		<h5>Subtítulo</h5>
+  		<p id="1"><em>Este es el primer párrafo de contenido.</em></p>
+  		<p id="2" span style="text-decoration:line-through;">Y este es el segundo párrafo de contenido</p>
+	</div>
+
+	<style>
+  		#divisor {
+    	color: #1f8dd3;
+    	border: 1px #FFC946 solid;
+    	margin: 5px;
+    	padding: 5px;
+  	}
+
+  	#divisor > h5 {
+  		color: #FE0000;
+  	}
+	</style>
+
+	<form id="form_client">
+		<fieldset>
+			<legend>Client Information</legend>
+			<label for="full_name">
+      			Full Name:
+      			<input type="text" name="full_name">
+    		</label><br>
+    		<label for="RFC">
+    			RFC:
+    			<input type="text" name="RFC">
+    		</label><br>
+    		<label for="Address">
+    			Dirección:
+    			<input type="text" name="Address">
+    		</label><br>
+    		<label for="email">
+    			Email:
+    			<input type="email" name="email">
+    		</label><br>
+    		<label for="telephone">
+    			Telefono:
+    			<input type="tel" name="telephone">
+    		</label><br>
+    		<label for="purchase description">
+    			Descripción de Compra:
+    			<input type="text" name="purchase description">
+    		</label><br>
+    		<label for="payment type">
+    			Tipo de Pago:
+    			<<select name="Tipo de Pago">
+  					<option value="efectivo">Efectivo</option>
+  					<option value="cheque">Cheque</option>
+  					<option value="Tarjeta de Credito: Visa">Tarjeta de Credito: Visa</option>
+  					<option value="Tarjeta de Credito: MasterCard">Tarjeta de Credito: MasterCard</option>
+  					<option value="Tarjeta de Credito: American Express">Tarjeta de Credito: American Express</option>
+  					<option value="Tarjeta de Debito: Visa">Tarjeta de Debito: Visa</option>
+  					<option value="Tarjeta de Debito: MasterCard">Tarjeta de Debito: MasterCard</option>
+  					<option value="Traveler's Checks">Travler's Checks</option>
+  					<option value="Other">Other...</option>
+				</select>
+			</label><br>
+			<label for="amount">
+				Monto:
+				<input type="number" name="amount">
+			</label><br>
+			<label for=submit>
+				<input type="submit" name="submit">
+			</label><br>
+		</fieldset>
+	</form>
+</body>
+</html>
